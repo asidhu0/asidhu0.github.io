@@ -1,0 +1,363 @@
+html {
+    height: 100%; 
+    background-color: #282c34; 
+}
+
+.HomePage {
+    padding-top: 8%;
+}
+
+.img {
+    max-width: 106%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.outer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.font {
+    color: white;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center; 
+    width: 70%;
+    margin: 0 auto; 
+    /* padding: 20px; */
+}
+
+.text-column {
+    width: 50%; 
+    padding-right: 2%;
+}
+
+.image-column {
+    width: 50%; /* Takes half the width of the container */
+    display: flex;
+    justify-content: center; /* Centers the image within the column */
+    align-items: center;
+    padding-left: 2%;
+}
+
+.custom-line {
+    height: 1px;
+    background-color: #666;
+    border: none;
+    /* width: 75%; */
+}
+
+.below-line {
+    margin-top: 25px;
+}
+
+.titles {
+    /* margin-right: 65%; */
+    /* justify-content: flex-start */
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates three columns */
+    gap: 50px; /* Space between grid items */
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 50px;
+    /* background-color: black; */
+}
+
+.rectangle {
+    height: 680px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    /* transition: transform 0.3s ease; */
+    /* transition: opacity 0.3s ease; */
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* padding-left: 100px; */
+    perspective: 1000px; 
+    /* position: relative; */
+    /* background-color: black; */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* 
+.rectangle .inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.rectangle.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.rectangle:hover {
+    /* transform: scale(1.05);  */
+    /* opacity: 0.8; */
+}
+
+.spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding-bottom: 10%; */
+}
+
+.title-content {
+    color: black;
+    font-size: 30px;
+}
+
+.text-content {
+    color: black;
+    font-size: 15px;
+}
+
+.projectImage {
+    /* height: 60%;  */
+    object-fit: contain;
+    padding: 10px;
+    border-radius: 30px;
+    /* box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.special-image-style {
+    width: 80%; /* or any specific width */
+    height: auto; /* maintains the aspect ratio */
+    padding-left: 9.9%;
+}
+
+.special-image-style2 {
+    width: 80%; /* or any specific width */
+    height: auto; /* maintains the aspect ratio */
+    padding-left: 9.9%;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center; /* Center logos horizontally */
+    align-items: center; /* Center logos vertically */
+    width: 100%;
+    margin-top: auto; /* Push the container to the bottom */
+}
+
+.logo {
+    /* width: 30px;
+    height: 30px;  */
+    max-width: 10%;
+    object-fit: contain; 
+    margin: 5px; /* Add some space around logos */
+}
+
+.container {
+    /* display: flex; */
+    width: 70%;
+    margin: 0 auto; 
+    padding: 15px;
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,0.1);  */
+}
+
+.experienceText {
+    text-align: left;
+}
+
+.timeText {
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.positionText {
+    opacity: 0.75;
+}
+
+.experienceText strong {
+    margin-top: 2px; 
+    margin-bottom: 0px;
+}
+
+.experienceText p {
+    margin-top: 0px; 
+}
+
+/* text flipping styles */
+/* .card-front, .card-back {
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.rectangle.is-flipped .card-front {
+    transform: rotateY(-180deg);
+}
+
+.rectangle.is-flipped .card-back {
+    transform: rotateY(0deg);
+} */
+
+/* new */
+
+/* Filename - App.css */
+
+
+.container1 {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.flip-card {
+	perspective: 1000px;
+	width: 100%;
+	height: 680px;
+	/* position: relative; */
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+.flip-card.flipped {
+	transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+	color: green;
+}
+
+.flip-card-back {
+	background-color: #F0EDFA;
+	color: blue;
+	transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.card-content {
+	padding: 20px;
+	text-align: center;
+}
+
+.flip-button {
+	width: 120px;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 10px;
+	background-color: #282c34;
+    color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.flip-button:hover {
+    color:  #666;
+}
+
+.buttonstyle {
+    padding: 3%;
+}
+
+.details-list {
+    /* padding-left: 1000px;  */
+    list-style-type: disc;
+    text-align: left; 
+    padding-right: 25px;
+}
+
+.details-list li {
+    margin-bottom: 10px; 
+    font-size: 17px; 
+    line-height: 1.5; 
+    color: black;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.contact-text {
+    flex: 1; /* Takes up remaining space, pushing icons to the side */
+    padding-right: 20px; /* Optional padding between text and icons */
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.contact-icons img {
+    width: 50px; /* Define fixed width for all icons */
+    height: 50px; /* Define fixed height for all icons */
+    object-fit: contain; /* Ensure images maintain their aspect ratio without distortion */
+}
+
+.contact-button-text {
+    display: flex; /* Activates Flexbox layout */
+    align-items: center; /* Vertically centers the items within the div */
+    gap: 10px; /* Optional: Adds space between the image and the text */
+    margin-bottom: -15px;
+    color: inherit;
+    text-decoration: none;
+}
